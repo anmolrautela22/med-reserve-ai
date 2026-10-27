@@ -1,6 +1,9 @@
 # Med-Reserve: AI-Driven Patient Triage & Bed Resource Planner
 
 Med-Reserve is an end-to-end clinical operations platform engineered to optimize critical care resource allocation and automate emergency room patient triage. By leveraging an embedded machine learning inference engine, the application tracks real-time patient physiological vitals to calculate risk stratifications and dynamically update live hospital bed inventory.
+## Live Demo
+
+The application is here: https://medres.streamlit.app/
 
 ## System Architecture & Workflow
 The application is structured into a modular, decoupled architecture to replicate production environments:
