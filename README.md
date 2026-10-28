@@ -2,24 +2,11 @@
 
 Med-Reserve is a Python and Streamlit project for recording patient measurements and tracking ICU and general bed availability. It uses SQLite to save assessments and scikit-learn to assign each record a risk category.
 
-## Run it
+## Live app
 
-Use Python 3.10 or newer.
+Open Med-Reserve: https://medres.streamlit.app/
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe train_model.py
-.\.venv\Scripts\python.exe -m streamlit run app.py
-```
-
-The training script creates `med_reserve_model.pkl` and `model_metrics.json`. The app creates `data/med_reserve.sqlite3` when it starts.
-
-To run the checks:
-
-```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests
-```
+It uses synthetic training data. Its predictions have not been clinically validated. Records are stored in a local SQLite database.
 
 ## What it does
 
